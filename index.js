@@ -16,9 +16,9 @@ app.get('/', function (req, res) {
 // connection configurations
 var dbConn = mysql.createConnection({
   host: 'localhost',
-  product: 'root',
+  user: 'root',
   password: '',
-  database: 'node_js_api'
+  database: 'emergentes'
 });
 
 // connect to database
@@ -99,8 +99,8 @@ app.delete('/product', function (req, res) {
 });
 
 // set port
-app.listen(3000, function () {
-  console.log('Node app is running on port 3000');
+app.listen(4000, function () {
+  console.log('Node app is running on port 4000');
 });
 
 module.exports = app;
